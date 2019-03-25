@@ -1,0 +1,47 @@
+cec@cec-H110M-S2:~$ ssh cs17d13@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d13@192.168.0.30's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+278 packages can be updated.
+0 updates are security updates.
+
+Last login: Mon Mar 25 10:12:56 2019 from 192.168.0.246
+$ ls
+examples.desktop  me.txt  name.txt  test
+$ touch you.txt
+$ ls 
+examples.desktop  me.txt  name.txt  test  you.txt
+$ rm you.txt
+$ ls
+examples.desktop  me.txt  name.txt  test
+$ cat me.txt
+Ashish Mathew John
+$ pwd
+/home/cs17d13
+$ find me.txt
+me.txt
+$ du
+4	./.cache
+4	./test
+40	./.config/plank/dock1/launchers
+44	./.config/plank/dock1
+48	./.config/plank
+52	./.config
+8	./.ssh
+148	.
+$ cp me.txt ash.txt
+$ cat ash.txt
+Ashish Mathew John
+$ scp me.txt you.txt
+$ cat you.txt
+Ashish Mathew John
+$ ls
+ash.txt  examples.desktop  me.txt  name.txt  test  you.txt
+$ 
